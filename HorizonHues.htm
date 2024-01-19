@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Horizon Hues - The Spectacular Drone Light Show</title>
+    <style>
+        :root {
+            --primary-color: #ff6a00;
+            --secondary-color: #00d4ff;
+            --accent-color: #ff0084;
+            --dark-bg: #040d21;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+        }
+
+        nav ul li a, 
+        nav ul li strong,
+        footer a,
+        footer a:hover {
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            border: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        img, .video-container {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-section {
+            margin-top: 2rem;
+        }
+
+        .service {
+            background: rgba(0, 0, 0, 0.5);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            color: var(--secondary-color);
+        }
+
+        .service ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service li {
+            margin-bottom: 0.5rem;
+        }
+
+        .service li::before {
+            content: '\\2022';
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong><img src="https://i.imgur.com/YOURLOGO.png" alt="Horizon Hues Logo" height="50"></strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" role="button">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Horizon Hues</h2>
+                    <h3>Experiencing the Sky in a New Light</h3>
+                </hgroup>
+                <p>Join us for a breathtaking journey through the night sky with our state-of-the-art drone shows. Witness a mesmerizing display of colors and formations, brought to life by our team of expert pilots and designers.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?droneshow" alt="Drone Show Display" />
+                    <figcaption><a href="https://unsplash.com/s/photos/droneshow" target="_blank">Image Source</a></figcaption>
+                </figure>
+                <!-- Services Section -->
+                <div class="service-section">
+                    <h2>Our Services</h2>
+                    <!-- Service Descriptions Here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        </small>
+    </footer>
+</body>
+</html>
